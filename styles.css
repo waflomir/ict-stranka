@@ -1,0 +1,102 @@
+/* Základní stylování pro web */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #f4f4f4;
+  border-bottom: 2px solid #f4f4f4;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+main .intro, main section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+a.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+a.btn:hover {
+  background: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+}
+
+/* Responzivita */
+@media (max-width: 768px) {
+  nav ul {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
