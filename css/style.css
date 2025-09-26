@@ -1,0 +1,63 @@
+/* Sticky footer: tělo stránky zabírá celou výšku okna */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flex rozložení pro přilepení patičky ke dnu */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Hlavička a navigace */
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1em;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hlavní obsah – zabírá zbývající prostor */
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Patička – vždy dole */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+/* Mobilní zobrazení */
+@media (max-width: 600px) {
+  nav {
+    display: block;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5em 0;
+  }
+}
